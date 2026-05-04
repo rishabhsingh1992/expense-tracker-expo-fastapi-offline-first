@@ -1,43 +1,64 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# ─── Dependencies ────────────────────────────────────────────────────────────
 node_modules/
+.pnp
+.pnp.js
 
-# Expo
+# ─── Expo ────────────────────────────────────────────────────────────────────
 .expo/
 dist/
 web-build/
 expo-env.d.ts
 
-# Native
+# ─── Native build artifacts ──────────────────────────────────────────────────
+/ios
+/android
 .kotlin/
 *.orig.*
+
+# ─── Signing & credentials ───────────────────────────────────────────────────
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
+*.pem
+google-services.json
+GoogleService-Info.plist
 
-# Metro
+# ─── Metro bundler ───────────────────────────────────────────────────────────
 .metro-health-check*
 
-# debug
+# ─── Environment variables ───────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ─── Drizzle ORM ─────────────────────────────────────────────────────────────
+drizzle/
+
+# ─── TypeScript ──────────────────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
+logs/
 
-# macOS
+# ─── OS artifacts ────────────────────────────────────────────────────────────
 .DS_Store
-*.pem
+Thumbs.db
+desktop.ini
 
-# local env files
-.env*.local
+# ─── IDE ─────────────────────────────────────────────────────────────────────
+.idea/
+*.swp
+*.swo
 
-# typescript
-*.tsbuildinfo
+# ─── Testing ─────────────────────────────────────────────────────────────────
+coverage/
 
-app-example
-
-# generated native folders
-/ios
-/android
+# ─── Miscellaneous ───────────────────────────────────────────────────────────
+app-example/
+*.orig
