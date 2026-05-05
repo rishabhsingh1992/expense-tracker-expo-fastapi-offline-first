@@ -5,8 +5,18 @@
     "paths": {
       "@/*": [
         "./*"
+      ],
+      "@/src/*": [
+        "src/*"
+      ],
+      "@/constants/*": [
+        "constants/*"
+      ],
+      "@/assets/*": [
+        "assets/*"
       ]
-    }
+    },
+    "baseUrl": "."
   },
   "include": [
     "**/*.ts",
