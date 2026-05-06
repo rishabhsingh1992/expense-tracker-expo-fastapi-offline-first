@@ -19,6 +19,19 @@ const MAPPING = {
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
   'xmark': 'close',
+  'fork.knife': 'restaurant',
+  'car.fill': 'directions-car',
+  'gamecontroller.fill': 'sports-esports',
+  'heart.fill': 'favorite',
+  'square.grid.2x2.fill': 'apps',
+  'bag.fill': 'shopping-bag',
+  'doc.fill': 'description',
+  'ellipsis.circle.fill': 'pending',
+  'tv.fill': 'tv',
+  'checkmark.circle.fill': 'check-circle',
+  'icloud.slash': 'cloud-off',
+  'exclamationmark.triangle.fill': 'warning',
+  'clock.fill': 'schedule',
 } as IconMapping;
 
 /**
